@@ -29,13 +29,29 @@
     size-adjust: 120%;
 }
 
+:root {
+    --text-c: hsl(207 5% 32%);
+    --page-bg: hsl(45 20% 96%);
+    --card-bg: white;
+    --vertical-rhythm: 1.5rem;
+    --border-c: hsl(45 20% 80%);
+    --border2-c: hsl(45 2% 67%);
+    --first-step-c: hsl(328 93% 48%);
+    --happiness-c: hsl(31 100% 50%);
+    --deep-sleep-c: hsl(0 100% 74%);
+    --art-excel-c: hsl(45 100% 50%);
+    --yes-c: hsl(97 95% 38%);
+    --intuition-c: hsl(243 92% 59%);
+}
+
 body {
     max-width: 65ch;
     margin: 0 auto;
-    padding: 1rem;
-    padding: 0 1rem 2rem;
+    padding: 0 1rem var(--vertical-rhythm);
     font-family: 'Certa Sans', system-ui, sans-serif;
     line-height: 1.5;
+    color: var(--text-c);
+    background-color: var(--page-bg);
 }
 
 h1, h2, h3 {
@@ -43,22 +59,41 @@ h1, h2, h3 {
 }
 
 h1 {
-    margin-inline: -1rem;
-    margin-block-start: 0;
-    padding: 1rem;
-    padding-block: 2rem;
-    background-color: #ff8400; /* #ff7b7b; */
+    margin-block: 0;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 1rem;
+    background-color: var(--happiness-c);
     color: white;
     font-size: 1.25rem;
     text-align: center;
 }
 
 section {
-    margin-block-start: 3rem;
+    margin-block-start: var(--vertical-rhythm);
 }
 
-article + article {
-    margin-block-start: 3rem;
+a + a {
+    margin-block-start: var(--vertical-rhythm);
+}
+
+a:has(article) {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+article {
+    border: 1px solid var(--border-c);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+a:hover > * {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.10);
+    border-color: var(--border2-c);
 }
 
 article h3 {
@@ -68,29 +103,29 @@ article h3 {
 }
 
 article p {
-    margin-block: 0.5em;
+    margin-block: 0.5em 0;
 }
 
 .first-step {
-    color: hsl(328 93% 48% / 1);
+    color: var(--first-step-c);
 }
 
 .happiness {
-    color: #ff8400;
+    color: var(--happiness-c);
 }
 
 .deep-sleep {
-    color: #ff7b7b;
+    color: var(--deep-sleep-c);
 }
 
 .art-excel {
-    color: #ffc001;
+    color: var(--art-excel-c);
 }
 
 .yes {
-    color: #4bbf05;
+    color: var(--yes-c);
 }
 
 .intuition {
-    color: #3f34f7;
+    color: var(--intuition-c);
 }
