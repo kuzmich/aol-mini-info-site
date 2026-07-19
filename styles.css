@@ -68,6 +68,11 @@ h1 {
     text-align: center;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 section {
     margin-block-start: var(--vertical-rhythm);
 }
@@ -78,8 +83,6 @@ a + a {
 
 a:has(article) {
     display: block;
-    text-decoration: none;
-    color: inherit;
 }
 
 article {
