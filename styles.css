@@ -36,6 +36,10 @@
     --vertical-rhythm: 1.5rem;
     --border-c: hsl(45 20% 80%);
     --border2-c: hsl(45 2% 67%);
+    --dark-blue-c: #2a3e4e;
+    --dark-blue-lighter-c: hsl(207 30% 40%);
+    --light-grey-c: #f7f6f3;
+    --grey-c: #acaba8;
     --first-step-c: hsl(328 93% 48%);
     --happiness-c: hsl(31 100% 50%);
     --deep-sleep-c: hsl(0 100% 74%);
@@ -99,6 +103,12 @@ a:hover > * {
     border-color: var(--border2-c);
 }
 
+.title-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 article h3 {
     font-family: 'Art of Living Script', cursive;
     font-size: 2rem;
@@ -107,6 +117,24 @@ article h3 {
 
 article p {
     margin-block: 0.5em 0;
+}
+
+.arrow {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--dark-blue-lighter-c);
+    color: white;
+}
+
+.arrow svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
 }
 
 .first-step {
