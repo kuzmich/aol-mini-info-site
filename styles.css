@@ -30,16 +30,15 @@
 }
 
 :root {
-    --text-c: hsl(207 5% 32%);
-    --page-bg: hsl(45 20% 96%);
-    --card-bg: white;
     --vertical-rhythm: 1.5rem;
+    --text-c: hsl(207 5% 32%);
+    --page-bg: hsl(45 20% 96%); /* #f7f6f3 */
+    --card-bg: white;
     --border-c: hsl(45 20% 80%);
-    --border2-c: hsl(45 2% 67%);
-    --dark-blue-c: #2a3e4e;
-    --dark-blue-lighter-c: hsl(207 30% 40%);
-    --light-grey-c: #f7f6f3;
-    --grey-c: #acaba8;
+    --border2-c: hsl(45 2% 67%); /* #acaba8; */
+    --arrow-c: hsl(207 0% 14%);
+    --arrow-bg-c: hsl(45 2% 78%);
+    /* --dark-blue-c: hsl(207 30% 24%); /\* 2a3e4e *\/ */
     --first-step-c: hsl(328 93% 48%);
     --happiness-c: hsl(31 100% 50%);
     --deep-sleep-c: hsl(0 100% 74%);
@@ -127,8 +126,8 @@ article p {
     width: 1.75rem;
     height: 1.75rem;
     border-radius: 50%;
-    background-color: var(--dark-blue-lighter-c);
-    color: white;
+    background-color: var(--arrow-bg-c);
+    color: var(--arrow-c);
 }
 
 .arrow svg {
