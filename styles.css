@@ -172,9 +172,7 @@ hgroup h1 {
 }
 
 hgroup p {
-    /* margin: 0; */
-    /* margin-block-start: 0.5rem; */
-    font-weight: bold;
+    font-style: italic;
 }
 
 h2 {
@@ -187,7 +185,12 @@ dt {
 }
 
 dd {
+    margin-block-start: 0.5rem;
     margin-inline-start: 2.5rem;
+}
+
+dd p:first-child {
+    margin-block-start: 0;
 }
 
 dd + dt {
