@@ -179,6 +179,10 @@ h2 {
     margin-block-start: 2rem;
 }
 
+.videos div + div {
+    margin-block-start: 1rem;
+}
+
 dt {
     font-size: 1.25rem;
     color: var(--happiness-c);
